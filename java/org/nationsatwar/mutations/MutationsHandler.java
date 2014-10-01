@@ -1,10 +1,5 @@
 package org.nationsatwar.mutations;
 
-import java.util.Iterator;
-import java.util.List;
-
-import org.nationsatwar.magictestingwands.items.ItemMagicWand;
-
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -13,11 +8,12 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.ChatStyle;
 import net.minecraft.util.IChatComponent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.event.world.BlockEvent;
 
 public class MutationsHandler {
 
 	@SubscribeEvent
-	public void leftClick(PlayerInteractEvent event) {
+	public void click(PlayerInteractEvent event) {
 		// Modification +/-
 		if (event.entityPlayer.inventory.getCurrentItem().getDisplayName().equalsIgnoreCase("Mutations Modifier")) {
 			// Check if they're left clicking a block.
