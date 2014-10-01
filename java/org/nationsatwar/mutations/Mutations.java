@@ -12,7 +12,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @Mod(modid=Mutations.MODID, name=Mutations.MODID, version=Mutations.VERSION)
 public class Mutations {
 	public final static String MODID = "Nations At War - Mutations";
-	public final static String VERSION = "1.0";
+	public final static String VERSION = "0.1";
 
 	@EventHandler
 	public void load(FMLInitializationEvent event) {
